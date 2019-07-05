@@ -38,12 +38,12 @@ data_files = [('', ['requirements.txt', 'requirements-py2.txt'])]
 
 setup(
     name='tapispy',
-    version='0.9.3',
-    description='SDK for Agave',
+    version='0.1.0dev',
+    description='Python SDK for the Tapis computing platform.',
     long_description=readme,
     author='Texas Advanced Computing Center',
-    author_email='jstubbs@tacc.utexas.edu, jochoa@tacc.utexas.edu',
-    url='https://github.com/TACC/agavepy',
+    author_email='jstubbs@tacc.utexas.edu',
+    url='https://github.com/tapis-project/tapispy',
     packages=[
         'tapispy',
         'tapispy.swaggerpy',
