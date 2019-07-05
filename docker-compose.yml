@@ -1,0 +1,17 @@
+---
+
+agavepy:
+  build: .
+  ports:
+    # 9999 is the port to access in the host:
+    # http://localhost:9999
+    - "9999:8888"
+  environment:
+    # This ip points to an Agave sandbox
+    AGAVE_HOST: 191.236.147.52
+    # Password for the notebook server
+    PASSWORD: agavepy
+    USE_HTTP: 1
+  volumes:
+    # Mount the current directory to make persistent change possible
+    - ./notebooks:/notebooks
